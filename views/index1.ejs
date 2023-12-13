@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .movie-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .movie-rating {
+            color: #e44d26;
+            font-weight: bold;
+        }
+
+        .movie-review {
+            color: #666;
+        }
+        .image img{
+            width:400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+    </style>
+</head>
+<body>
+
+    <!-- <h1>Movie List Review</h1> -->
+
+            <div class="movie-title"></div>
+            <div class="movie-rating"></div>
+            <div class="movie-description"></div>
+            <!-- <div class="image"><img src=<%= image %>  ></div> -->
+            <table>
+            
+                <tr><th>Title</th> <td><%= info.title  %></td></tr>
+                <tr><th>Rating</th>  <td><%= info.imdb_rating %></td></tr>
+                <tr><th>Director</th> <td><%= info.director %></td></tr>
+                <tr>  <th>Discription</th> <td><%= info.description %></td></tr>
+               
+            </table>
+
+        </body>
+</html>
